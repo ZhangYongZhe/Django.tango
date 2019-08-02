@@ -23,4 +23,5 @@ urlpatterns = [
     url(r'^$', views.index, name='index'),
     url(r'^rango/', include('rango.urls')),
     url(r'^admin/', admin.site.urls),
+    url(r'^test/', views.head, name='head'),
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
